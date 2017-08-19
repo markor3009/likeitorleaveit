@@ -5,7 +5,7 @@
 
 header {
     position: absolute;
-    background-image: url('../assets/nav.jpg');
+    background-image: linear-gradient(rgb(58, 66, 68), silver);
     background-size: cover;
     width: 100%;
     height: 8%;
@@ -16,14 +16,16 @@ header {
     position: absolute;
     top: 8%;
     width: 100%;
-    height: 92%;
+    height: 87%;
     background-image: radial-gradient(white, silver);
+    background-image: url(/assets/background2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #heading h1 {
     float: left;
-    margin: 7px 0px 0 30px;
+    margin: 12px 0px 0 30px;
     color: antiquewhite;
     font-family: cursive;
     font-size: 30px;
@@ -32,7 +34,7 @@ header {
 
 img {
     float: left;
-    margin: 15px 10px 0 10px;
+    margin: 20px 10px 0 10px;
     width: 35px;
     height: 35px;
 }
@@ -55,7 +57,7 @@ img {
 #menu-bar a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     padding: 10px;
     color: antiquewhite;
@@ -68,10 +70,16 @@ img {
     text-shadow: 0 0 0;
 }
 
-.content {
+#content {
+    z-index: 20;
     position: absolute;
-    top: 30%;
+    padding: 20px;
+    top: 20%;
     left: 20%;
+    width: 60%;
+    height: 50%;
+    background-color: rgba(58, 66, 68, .7);
+    border-radius: 10px;
 }
 
 section,
@@ -80,27 +88,127 @@ aside {
 }
 
 #marketing-text {
-    position: relative;
-    width: 450px;
+    position: absolute;
+    color: whitesmoke;
+    width: 520px;
     height: 200px;
     font-family: sans-serif;
 }
 
 #marketing-text h1 {
-    color: rgb(40, 57, 70);
     font-size: 40px;
 }
 
 #marketing-text p {
     margin-top: 20px;
-    color: rgb(40, 57, 70);
-    font-size: 20px;
+    font-size: 26px;
 }
 
-#create-user fieldset {
-    padding: 10px;
+#create-user {
+    font-family: sans-serif;
+    z-index: 10;
+    position: absolute;
+    left: 600px;
+    width: 500px;
+    height: 380px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: silver;
+    box-shadow: 5px 5px 25px black;
+    /*rgba(192, 192, 192, 0.7)*/
+    ;
+}
+
+#create-user table {
+    width: 100%;
+    height: 200px;
 }
 
 #create-user input {
-    padding: 3px;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#create-user :not(input) {
+    font-size: 22px;
+}
+
+#create-user h2 {
+    color: rgba(40, 57, 70, 1);
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#create-user input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#create-user input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 5%;
+    background-image: linear-gradient( silver, rgb(58, 66, 68));
+}
+
+footer p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 100;
+    margin: 10px;
+    display: inline-block;
+}
+
+footer a {
+    float: right;
+}
+
+#fb {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    background-image: url(/assets/facebook.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+#twitter {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    background-image: url(/assets/twitter.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+#google {
+    float: right;
+    margin-top: 5px;
+    margin-right: 35px;
+    background-image: url(/assets/google-plus.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
 }

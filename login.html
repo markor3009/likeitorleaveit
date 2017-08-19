@@ -24,23 +24,57 @@
         </nav>
     </header>
     <div class="website">
-        <div class="content">
+        <div id="content">
             <section id="marketing-text">
                 <h1>Do you like movies?</h1>
-                <p>Create account, play a game and meet people with similar taste in movies.</p>
+                <p>Create an account, explore movies and meet people with similar taste in movies.</p>
             </section>
             <aside id="create-user">
-                <form action="">
-                    <fieldset>
-                        <legend>Create new User</legend>
-
-                        First name: <input type="text"><br> Last name: <input type="text"><br> Username: <input type="text"><br> Password: <input type="text"><br> Repeat password: <input type="text"><br>
-                        <input type="submit" value="Create new user">
-                    </fieldset>
+                <h2>Create New Account</h2>
+                <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <td>First name:</td>
+                            <td><input type="text" placeholder="Your first name" name="firstname">
+                        </tr>
+                        <tr>
+                            <td>Last name:</td>
+                            <td><input type="text" placeholder="Your last name" name="lastname">
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" placeholder="Your email" name="email">
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" placeholder="Your password" name="password">
+                        </tr>
+                        <tr>
+                            <td>Repeat password:</td>
+                            <td><input type="password" placeholder="Repeat your password" name="repPassword">
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit account">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
                 </form>
             </aside>
         </div>
     </div>
+    <footer>
+        <p>Developed by Marko Radulović ©</p>
+        <a id="google"></a>
+        <a id="twitter"></a>
+        <a id="fb"></a>
+    </footer>
 </body>
 
 </html>
